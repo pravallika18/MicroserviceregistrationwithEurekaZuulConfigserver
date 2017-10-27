@@ -1,0 +1,8 @@
+#Giving name to the application same as which to be called from server
+spring:
+  application:
+    name: configClientTest
+#Port at which the client will be looking for its properties
+  cloud:
+    config:
+      uri: http://localhost:8888

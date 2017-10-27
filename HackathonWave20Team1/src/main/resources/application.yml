@@ -1,0 +1,20 @@
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true 
+    serviceUrl:
+      defaultZone: http://localhost:8070/eureka/
+  instance:
+    hostname: localhost
+    
+server:
+  port: 8081  
+  
+spring:
+  application:
+    name: hackathonService  
+    
+  cloud:
+    config:
+      uri: http://localhost:8888
+    
